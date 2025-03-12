@@ -30,4 +30,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: bencaballero/CICDwriteachat:latest
+          tags: bencaballero/cicdwriteachat:latest
