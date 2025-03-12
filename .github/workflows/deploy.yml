@@ -54,11 +54,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         
-      - name: Créer ou mettre à jour le fichier .env
+      - name: Create or update .env file
         run: echo "OPENAI_API_KEY=${{ secrets.API_KEY }}" > .env
-
-      - name: Vérifier le contenu du fichier .env
-        run: cat .env
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
@@ -72,4 +69,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: bencaballero/cicdwriteachat:latest
+          tags: ilikechickencurry/cicdwriteachat:latest
