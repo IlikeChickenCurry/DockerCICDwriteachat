@@ -69,4 +69,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ilikechickencurry/cicdwriteachat:latest
+          tags: bencaballero/cicdwriteachat:latest
