@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Créer ou mettre à jour le fichier .env
-        run: echo "OPENAI_API_KEY=${{ secrets.API_KEY }}" >> .env
+        run: echo "OPENAI_API_KEY=${{ secrets.API_KEY }}" > .env
 
       - name: Vérifier le contenu du fichier .env
         run: cat .env
